@@ -55,6 +55,8 @@ Here's a preview with all my personal links in place:
 
 ![Preview](http://dl.dropboxusercontent.com/s/rm4fs64qff6sggp/2015-04-24%20at%2011.42%20PM.png)
 
+Here's what it looks like by default when you first set it up: [preview](http://dl.dropboxusercontent.com/s/oz33yvxtbhewh5h/2015-04-25%20at%204.03%20AM.png)
+
 ### Final Words
 
 Please don't take this too seriously. Just use it if you like it. Adjust it to your needs. Suggest changes to it (PRs are welcome). Or simply let it be.
