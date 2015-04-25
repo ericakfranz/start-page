@@ -98,7 +98,9 @@ a:hover {
 .site-admin {
 	background: #8998B8;
 }
-.site-docs {
+.site-docs,
+.site-themes,
+.site-plugins {
 	background: #BBC4D5;
 }
 .site-url:hover {
