@@ -1,0 +1,193 @@
+/* formatting & general */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s;
+}
+html {
+	background: url('../../assets/images/bg.png');
+	color: #555;
+	font-size: 15px;
+}
+a {
+	color: #555;
+	text-decoration: none;
+}
+a:hover {
+	color: #999;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+#page {
+	background: #fff;
+	padding: 10px 50px 50px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.section {
+	margin-bottom: 18px;
+}
+.section-title {
+	background: #555;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 6px;
+	border-radius: 4px;
+	margin-bottom: 0;
+}
+.subtitle {
+	color: #666;
+}
+.google-search-form {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.google-search-form input[type="text"] {
+	font-size: 13px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+
+
+/* sites & resources */
+.site {
+	display: inline-block;
+	padding: 20px 20px 0;
+	width: 32%;
+	vertical-align: top;
+}
+.site-resources {
+	float: right;
+	padding: 20px 0 0;
+	width: 65%;
+}
+.site-favicon {
+	display: inline-block;
+	border-radius: 3px;
+}
+.site-title {
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+.site-links {
+	margin-left: 20px;
+}
+.site-url {
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 4px;
+	border-radius: 3px;
+}
+.view-site {
+	background: #5474B8;
+}
+.site-admin {
+	background: #8998B8;
+}
+.site-docs {
+	background: #BBC4D5;
+}
+.site-url:hover {
+	background: #555;
+	color: #fff;
+}
+.resource-section {
+	margin-bottom: 20px;
+}
+.resource-section-title {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 6px;
+	font-weight: 700;
+	padding: 0;
+}
+.resource {
+	padding: 4px 0;
+}
+.resource.half {
+	float: left;
+	width: 48%;
+	margin-right: 3%;
+}
+.resource.half:nth-child(even) {
+	margin-right: 0;
+}
+.resource-link {
+	font-size: 13px;
+	vertical-align: top;
+}
+
+
+/* general links */
+.my-links {
+	padding: 30px 20px 0;
+}
+.random-links {
+	display: inline-block;
+	font-size: 13px;
+	margin-top: 6px;
+	margin-right: 20px;
+}
+.link-title {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/* respond, yo */
+@media all and ( max-width: 900px ) {
+	#page {
+		padding: 10px;
+	}
+	.site-title {
+		font-size: 14px;
+	}
+}
+
+@media all and ( max-width: 768px ) {
+	.site {
+		width: 48%;
+	}
+	.edd_site,
+	.site-resources {
+		width: 100%;
+	}
+	.site-resources {
+		padding: 20px;
+	}
+	.resource-section-title {
+		color: #666;
+	}
+	.resource-group {
+		padding-left: 20px;
+	}
+}
+
+@media all and ( max-width: 450px ) {
+	.site {
+		margin-right: 0;
+		width: 100%;
+	}
+	.site-title,
+	.resource-section-title {
+		font-size: 20px;
+	}
+	.resource.half {
+		margin-right: 0;
+		width: 100%;
+	}
+}
