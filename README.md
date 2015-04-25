@@ -30,7 +30,7 @@ _Note: Trello and Dropbox were acting funky and didn't return favicons. So I mad
 
 Here's a preview with all my personal links in place:
 
-![Preview](http://glui.me/?i=b15iccn6turlxrq/2015-04-24_at_11.19_PM.png/)
+![Preview](http://dl.dropboxusercontent.com/s/b15iccn6turlxrq/2015-04-24%20at%2011.19%20PM.png)
 
 ### Final Words
 
