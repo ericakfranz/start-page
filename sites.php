@@ -208,7 +208,7 @@ $local_sites = array(
 	),
 	'volatyl'         => array(
 		'name'        => 'Volatyl',
-		'id'          => 'wordpress',
+		'id'          => 'volatyl',
 		'url'         => 'http://localhost/volatyl/',
 		'favicon'     => $favicons . 'volatylthemes.com',
 		'wordpress'   => true,
@@ -236,7 +236,7 @@ $local_sites = array(
 	),
 	'edd_staging'     => array(
 		'name'        => 'EDD Staging',
-		'id'          => 'wordpress',
+		'id'          => 'edd_staging',
 		'url'         => 'http://localhost/edd-staging/',
 		'favicon'     => $favicons . 'easydigitaldownloads.com',
 		'wordpress'   => true,
