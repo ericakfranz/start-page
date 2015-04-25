@@ -28,11 +28,17 @@ This behavior is different based on the different loops in the index file becaus
 
 If the array doesn't have a `wordpress` key, that means the HTML isn't set up to grab one anyway. Adjust as needed.
 
+### Stylez
+
+Even though I never had intentions of any of you ever seeing this, I'm pretty sure I followed good practices when it comes to pairing HTML and CSS... because standards. So there should be a class for just about everything.
+
+You should be able to tap into what I already have there even if you adjust the HTML structure. I'm not really sure why I'm saying this, though, because you know what you're doing.
+
 ### Favicons
 
 I'm using Google's little favicon finder tool thing. http://www.google.com/s2/favicons?domain=
 
-So in the arrays found in `sites.php`, just add the domain of the site as the value of the `favicon` array key (after the variable, of course) and let Google work.
+So in the arrays found in `sites.php`, just add the domain of the site as the value of the `favicon` array key (concatenated with the `$favicon` variable, of course) and let Google work.
 
 _Note: Trello and Dropbox were acting funky and didn't return favicons. So I made the images and put them in place myself because try to stop me._
 
