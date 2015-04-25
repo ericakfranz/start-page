@@ -10,7 +10,7 @@ I use Chrome. Apparently, there's no setting for the New Page URL. :rage: Instea
 
 Here's the deal, though. That's not the same thing as the New Tab page. Likewise, the Home Button uses the default Chrome New Tab page by default. This means you can't actually set the New Tab page. So lame.
 
-What I did was find a Chrome extension that redirects the New Tab to a URL (my local URL). Cool. But there are a few drawbacks:
+What I did was find a Chrome extension [?](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna) that redirects the New Tab to a URL (my local URL). Cool. But there are a few drawbacks:
 
 * After the redirect, the focus is no longer in the URL bar.
 * The redirect takes a little longer.
