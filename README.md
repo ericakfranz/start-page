@@ -26,6 +26,12 @@ So in the arrays found in `sites.php`, just add the domain of the site as the va
 
 _Note: Trello and Dropbox were acting funky and didn't return favicons. So I made the images and put them in place myself because try to stop me._
 
+### Screenshots
+
+Here's a preview with all my personal links in place:
+
+[Preview](http://glui.me/?i=b15iccn6turlxrq/2015-04-24_at_11.19_PM.png/)
+
 ### Final Words
 
 Ummm... please don't take this seriously. Just take it and do stuff with it if you want to.
