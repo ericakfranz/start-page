@@ -46,7 +46,7 @@ _Note: Trello and Dropbox were acting funky and didn't return favicons. So I mad
 
 Here's a preview with all my personal links in place:
 
-![Preview](http://dl.dropboxusercontent.com/s/b15iccn6turlxrq/2015-04-24%20at%2011.19%20PM.png)
+![Preview](http://dl.dropboxusercontent.com/s/rm4fs64qff6sggp/2015-04-24%20at%2011.42%20PM.png)
 
 ### Final Words
 
