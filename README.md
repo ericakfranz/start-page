@@ -22,9 +22,9 @@ What I did on this page was add a standard Google search form (not a site search
 
 `sites.php` just has a bunch of arrays in it and `index.php` just loops through those arrays grabbing links and stuff. Simple.
 
-For WordPress sites, the array items have a a `wordpress` key where you'd either give it true or false. If you set it to `true`, a link to the dashboard will also appear under your site link.
+For WordPress sites, the array items have a `wordpress` key where you'd either give it true or false. If you set it to `true`, a link to the dashboard will also appear under your site link.
 
-This behavior is different based on the different loops in the index file because again, I made this for me. Down in my local development section, I also wanted links directly to the plugins and themes pages in my dashboard. So yea... those are there too. Again, though, all it takes is giving the `wordpress` key a `true` value.
+This behavior is different based on the different loops in the index file because again, I made this for me. Down in my local development section, I also wanted links directly to the plugins and themes pages in my WordPress dashboards. So yea... those are there too. Again, though, all it takes is giving the `wordpress` key a `true` value.
 
 If the array doesn't have a `wordpress` key, that means the HTML isn't set up to grab one anyway. Adjust as needed.
 
