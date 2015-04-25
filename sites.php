@@ -1,52 +1,77 @@
 <?php // start page sites
-	
+
+// Google favicon snatcher
 $favicons = 'http://www.google.com/s2/favicons?domain=';
 
+/** ============================
+ * My Sites
+ */
 $my_sites = array(
-	'sdavismedia'     => array(
-		'name'        => 'SDavis Media',
-		'id'          => 'sdavismedia',
-		'url'         => 'http://sdavismedia.com/',
-		'favicon'     => $favicons . 'sdavismedia.com',
+	'wordpress'       => array(
+		'name'        => 'Example WordPress',
+		'id'          => 'espn',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'wordpress.org',
 		'wordpress'   => true,
+			'admin'       => true,
+			'themes'      => true,
+			'plugins'     => true,
 	),
-	'volatylthemes'   => array(
-		'name'        => 'Volatyl Themes',
-		'id'          => 'volatylthemes',
-		'url'         => 'http://volatylthemes.com/',
-		'favicon'     => $favicons . 'volatylthemes.com',
-		'wordpress'   => true,
-	),
-	'buildwpyourself' => array(
-		'name'        => 'Build WP Yourself',
-		'id'          => 'buildwpyourself',
-		'url'         => 'http://buildwpyourself.com/',
-		'favicon'     => $favicons . 'buildwpyourself.com',
-		'wordpress'   => true,
-	),
-	'seandavis'       => array(
-		'name'        => 'Sean Davis',
-		'id'          => 'seandavis',
-		'url'         => 'http://seandavis.co/',
-		'favicon'     => $favicons . 'seandavis.co',
-		'wordpress'   => true,
-	),
-	'optinagent'      => array(
-		'name'        => 'Optin Agent',
-		'id'          => 'optinagent',
-		'url'         => 'http://optinagent.com/',
-		'favicon'     => $favicons . 'optinagent.com',
-		'wordpress'   => true,
-	),
-	'dapperfitdetermined' => array(
-		'name'        => 'Dapper Fit Determined',
-		'id'          => 'dfd',
-		'url'         => 'http://dapperfitdetermined.com/',
-		'favicon'     => $favicons . 'dapperfitdetermined.com',
+	'google'          => array(
+		'name'        => 'Google',
+		'id'          => 'google',
+		'url'         => 'http://google.com/',
+		'favicon'     => $favicons . 'google.com',
 		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'facebook'        => array(
+		'name'        => 'Facebook',
+		'id'          => 'facebook',
+		'url'         => 'http://facebook.com/',
+		'favicon'     => $favicons . 'facebook.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'twitter'         => array(
+		'name'        => 'Twitter',
+		'id'          => 'twitter',
+		'url'         => 'http://twitter.com/',
+		'favicon'     => $favicons . 'twitter.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'youtube'         => array(
+		'name'        => 'YouTube',
+		'id'          => 'youtube',
+		'url'         => 'http://youtube.com/',
+		'favicon'     => $favicons . 'youtube.co',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'wordpress_2'     => array(
+		'name'        => 'Example WordPress 2',
+		'id'          => 'wordpress_2',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'wordpress.org',
+		'wordpress'   => true,
+			'admin'       => true,
+			'themes'      => false,
+			'plugins'     => true,
 	),
 );
 
+/**
+ * My Secondary Links
+ */
 $my_links = array(
 	'paypal'          => array(
 		'name'        => 'PayPal',
@@ -54,191 +79,206 @@ $my_links = array(
 		'url'         => 'https://www.paypal.com/',
 		'favicon'     => $favicons . 'paypal.com',
 	),
-	'stripe'          => array(
-		'name'        => 'Stripe',
-		'id'          => 'stripe',
-		'url'         => 'https://dashboard.stripe.com/transfers/overview',
-		'favicon'     => $favicons . 'stripe.com',
-	),
-	'sdvs.me'         => array(
-		'name'        => 'sdvs.me',
-		'id'          => 'sdvs.me',
-		'url'         => 'http://sdvs.me/',
-		'favicon'     => $favicons . 'sdvs.me',
-	),
-	'aweber'          => array(
-		'name'        => 'Aweber',
-		'id'          => 'aweber',
-		'url'         => 'https://www.aweber.com/',
-		'favicon'     => $favicons . 'aweber.com',
-	),
-	'wordpress'       => array(
-		'name'        => 'WordPress',
-		'id'          => 'wordpress',
-		'url'         => 'https://profiles.wordpress.org/sdavis2702',
-		'favicon'     => $favicons . 'wordpress.org',
+	'wikipedia'       => array(
+		'name'        => 'Wikipedia',
+		'id'          => 'wikipedia',
+		'url'         => 'https://www.wikipedia.org/',
+		'favicon'     => $favicons . 'wikipedia.com',
 	),
 	'github'          => array(
 		'name'        => 'GitHub',
 		'id'          => 'github',
-		'url'         => 'https://github.com/SDavisMedia',
+		'url'         => 'https://github.com/',
 		'favicon'     => $favicons . 'github.com',
 	),
-);
-
-$edd_links = array(
-	'edd_site'        => array(
-		'name'        => 'Easy Digital Downloads',
-		'id'          => 'edd_site',
-		'url'         => 'https://easydigitaldownloads.com/',
-		'favicon'     => $favicons . 'easydigitaldownloads.com',
-		'wordpress'   => true,
+	'amazon'          => array(
+		'name'        => 'Amazon',
+		'id'          => 'amazon',
+		'url'         => 'http://www.amazon.com/',
+		'favicon'     => $favicons . 'amazon.com',
+	),
+	'tumblr'          => array(
+		'name'        => 'Tumblr',
+		'id'          => 'tumblr',
+		'url'         => 'http://www.tumblr.com/',
+		'favicon'     => $favicons . 'tumblr.com',
 	),
 );
 
-$edd_support = array(
-	'forum_dashboard' => array(
-		'name'        => 'Support Dashboard',
-		'id'          => 'forum_dashboard',
-		'url'         => 'https://easydigitaldownloads.com/support/dashboard/',
-		'favicon'     => $favicons . 'easydigitaldownloads.com',
-	),
-	'my_tickets'      => array(
-		'name'        => 'My Support Tickets',
-		'id'          => 'my_tickets',
-		'url'         => 'https://easydigitaldownloads.com/support/dashboard/?mod=1305',
-		'favicon'     => $favicons . 'easydigitaldownloads.com',
-	),
-	'org_tickets'     => array(
-		'name'        => 'WP.org',
-		'id'          => 'org_tickets',
-		'url'         => 'https://wordpress.org/support/plugin/easy-digital-downloads',
-		'favicon'     => $favicons . 'wordpress.com',
-	),
-	'helpscout'       => array(
-		'name'        => 'HelpScout',
-		'id'          => 'helpscout',
-		'url'         => 'https://secure.helpscout.net/mailbox/8bdaa0e6241e867f/321418/',
-		'favicon'     => $favicons . 'helpscout.com',
+
+/** ============================
+ * Single Project Section
+ */
+$project_links = array(
+	'my_project'      => array(
+		'name'        => 'My Special Project',
+		'id'          => 'my_project',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
 	),
 );
 
-$edd_github = array(
-	'edd_issues'      => array(
-		'name'        => 'EDD Repo Issues',
-		'id'          => 'edd_issues',
-		'url'         => 'https://github.com/easydigitaldownloads/Easy-Digital-Downloads/issues',
-		'favicon'     => $favicons . 'github.com',
+// first set of project resources
+$section_one_links = array(
+	'link_one_one'    => array(
+		'name'        => 'Resource Link',
+		'id'          => 'link_one_one',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'edd'             => array(
-		'name'        => 'Easy Digital Downloads',
-		'id'          => 'edd',
-		'url'         => 'https://github.com/easydigitaldownloads/Easy-Digital-Downloads',
-		'favicon'     => $favicons . 'github.com',
+	'link_one_two'    => array(
+		'name'        => 'Another Link',
+		'id'          => 'link_one_two',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'edd_site_issues'      => array(
-		'name'        => 'EDD Site Issues',
-		'id'          => 'edd_site_issues',
-		'url'         => 'https://github.com/easydigitaldownloads/EDD-Site/issues',
-		'favicon'     => $favicons . 'github.com',
+	'link_one_three'  => array(
+		'name'        => 'Links Rule',
+		'id'          => 'link_one_three',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'edd_site'        => array(
-		'name'        => 'EDD Site (Theme)',
-		'id'          => 'edd_site',
-		'url'         => 'https://github.com/easydigitaldownloads/EDD-Site',
-		'favicon'     => $favicons . 'github.com',
-	),
-);
-
-$edd_trello = array(
-	'ext_theme'       => array(
-		'name'        => 'Extensions/Themes',
-		'id'          => 'ext_theme',
-		'url'         => 'https://trello.com/b/bsdqsOEW/easy-digital-downloads-extensions-themes',
-		'favicon'     => 'assets/images/trello-icon.png',
-	),
-	'admin'           => array(
-		'name'        => 'Administration',
-		'id'          => 'admin',
-		'url'         => 'https://trello.com/b/d3ZiktZV/edd-administration',
-		'favicon'     => 'assets/images/trello-icon.png',
-	),
-	'docs'            => array(
-		'name'        => 'Documentation',
-		'id'          => 'docs',
-		'url'         => 'https://trello.com/b/1tLp4MNg/edd-documentation',
-		'favicon'     => 'assets/images/trello-icon.png',
-	),
-	'fes'             => array(
-		'name'        => 'FES',
-		'id'          => 'fes',
-		'url'         => 'https://trello.com/b/vT8aivfj/fes-development',
-		'favicon'     => 'assets/images/trello-icon.png',
+	'link_one_four'   => array(
+		'name'        => 'One Last Time',
+		'id'          => 'link_one_four',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
 );
 
-$edd_resources = array(
-	'dropbox_extensions' => array(
-		'name'        => 'Dropbox Extensions',
-		'id'          => 'dropbox_extensions',
-		'url'         => 'https://www.dropbox.com/home/Add%20Ons',
-		'favicon'     => 'assets/images/dropbox-icon.png',
+// second set of project resources
+$section_two_links = array(
+	'link_two_one'    => array(
+		'name'        => 'Resource Link',
+		'id'          => 'link_two_one',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'dropbox_themes'  => array(
-		'name'        => 'Dropbox Themes',
-		'id'          => 'dropbox_themes',
-		'url'         => 'https://www.dropbox.com/home/Easy%20Digital%20Downloads',
-		'favicon'     => 'assets/images/dropbox-icon.png',
-	),
-	'deployhq'        => array(
-		'name'        => 'Deploy HQ',
-		'id'          => 'deployhq',
-		'url'         => 'https://affiliatewp.deployhq.com/',
-		'favicon'     => $favicons . 'deployhq.com',
+	'link_two_two'    => array(
+		'name'        => 'Another Link',
+		'id'          => 'link_two_two',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
 );
 
-$local_sites = array(
-	'trunk'           => array(
-		'name'        => 'Trunk',
-		'id'          => 'trunk',
-		'url'         => 'http://localhost/trunk/',
-		'favicon'     => $favicons . 'wordpress.com',
-		'wordpress'   => true,
+// third set of project resources
+$section_three_links = array(
+	'link_three_one'    => array(
+		'name'        => 'Resource Link',
+		'id'          => 'link_three_one',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'volatyl'         => array(
-		'name'        => 'Volatyl',
-		'id'          => 'volatyl',
-		'url'         => 'http://localhost/volatyl/',
-		'favicon'     => $favicons . 'volatylthemes.com',
-		'wordpress'   => true,
+	'link_three_two'    => array(
+		'name'        => 'Another Link',
+		'id'          => 'link_three_two',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'edd'             => array(
-		'name'        => 'EDD',
-		'id'          => 'edd',
-		'url'         => 'http://localhost/edd/',
-		'favicon'     => $favicons . 'easydigitaldownloads.com',
-		'wordpress'   => true,
+	'link_three_three'  => array(
+		'name'        => 'Links Rule',
+		'id'          => 'link_three_three',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'themereview'     => array(
-		'name'        => 'Theme Review',
-		'id'          => 'themereview',
-		'url'         => 'http://localhost/themereview/',
-		'favicon'     => $favicons . 'wordpress.com',
-		'wordpress'   => true,
+	'link_three_four'   => array(
+		'name'        => 'One Last Time',
+		'id'          => 'link_three_four',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'wordpress'       => array(
-		'name'        => 'WordPress',
-		'id'          => 'wordpress',
-		'url'         => 'http://localhost/wordpress/',
-		'favicon'     => $favicons . 'wordpress.com',
-		'wordpress'   => true,
+);
+
+// fourth set of project resources
+$section_four_links = array(
+	'link_four_one'    => array(
+		'name'        => 'Resource Link',
+		'id'          => 'link_four_one',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
 	),
-	'edd_staging'     => array(
-		'name'        => 'EDD Staging',
-		'id'          => 'edd_staging',
-		'url'         => 'http://localhost/edd-staging/',
-		'favicon'     => $favicons . 'easydigitaldownloads.com',
-		'wordpress'   => true,
+	'link_four_two'    => array(
+		'name'        => 'Another Link',
+		'id'          => 'link_four_two',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
+	),
+	'link_four_three'  => array(
+		'name'        => 'Links Rule',
+		'id'          => 'link_four_three',
+		'url'         => 'http://example.com/',
+		'favicon'     => $favicons . 'example.com',
+	),
+);
+
+
+/** ============================
+ * More Sites
+ */
+$more_sites = array(
+	'instagram'       => array(
+		'name'        => 'Instagram',
+		'id'          => 'instagram',
+		'url'         => 'http://instagram.com/',
+		'favicon'     => $favicons . 'instagram.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'buzzfeed'        => array(
+		'name'        => 'Buzzfeed',
+		'id'          => 'buzzfeed',
+		'url'         => 'http://buzzfeed.com/',
+		'favicon'     => $favicons . 'buzzfeed.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'apple'           => array(
+		'name'        => 'Apple',
+		'id'          => 'apple',
+		'url'         => 'http://apple.com/',
+		'favicon'     => $favicons . 'apple.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'hulu'            => array(
+		'name'        => 'Hulu',
+		'id'          => 'hulu',
+		'url'         => 'http://hulu.com/',
+		'favicon'     => $favicons . 'hulu.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'craigslist'      => array(
+		'name'        => 'Craigslist',
+		'id'          => 'craigslist',
+		'url'         => 'http://craigslist.org/',
+		'favicon'     => $favicons . 'craigslist.org',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
+	),
+	'adobe'           => array(
+		'name'        => 'Adobe',
+		'id'          => 'adobe',
+		'url'         => 'http://adobe.com/',
+		'favicon'     => $favicons . 'adobe.com',
+		'wordpress'   => false,
+			'admin'       => false,
+			'themes'      => false,
+			'plugins'     => false,
 	),
 );

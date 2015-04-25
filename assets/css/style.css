@@ -107,7 +107,7 @@ a:hover {
 	background: #555;
 	color: #fff;
 }
-.resource-section {
+.resource-section:not(:last-child) {
 	margin-bottom: 20px;
 }
 .resource-section-title {
@@ -150,7 +150,7 @@ a:hover {
 }
 
 
-/* respond, yo */
+/* responsive */
 @media all and ( max-width: 900px ) {
 	#page {
 		padding: 10px;
@@ -164,7 +164,7 @@ a:hover {
 	.site {
 		width: 48%;
 	}
-	.edd_site,
+	.project-site,
 	.site-resources {
 		width: 100%;
 	}
