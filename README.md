@@ -37,7 +37,8 @@ You should be able to tap into what I already have in place even if you adjust t
 The structure is designed for you to be able to move sections around however you want them. It also includes three different types of sections:
 
 1. A section divided into columns of three that simply displays links.
-2. A section meant to be dedicated to one project. It displays the primary site links on the left (in the manner mentioned above) and a section to the right where you add groups of resources pertaining to the project.
+2. A section that does not have a major heading and just displays a row of links with favicons.
+3. A section meant to be dedicated to one project. It displays the primary site links on the left (in the manner mentioned above) and a section to the right where you add groups of resources pertaining to the project.
 
 The entire structure is responsive. Why? I don't know. Maybe you find that useful locally. :)
 
