@@ -1,4 +1,6 @@
-# Local Browser Start Page
+# LOCAL Browser Start Page
+
+_You must have a local server to run this on your machine._
 
 This is nothing more than a one-page site that I use as my new tab page in my browsers.
 
